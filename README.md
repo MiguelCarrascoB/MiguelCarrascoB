@@ -5,6 +5,8 @@
 
 I build systems around small decision models: models that read a prompt and a list of options and return a probability for each option in one forward pass, instead of generating text. They're cheap enough to run on every request, so I use them for routing, triage and classification. That only works if the probabilities are honest, so I measure calibration as well as accuracy.
 
+By day I lead the AI team at Grupo Global Exchange (GETD), where we build agents and LLM systems with Python, FastAPI, Strands Agents, MCP and AWS. The projects below are my own work outside of that.
+
 [LinkedIn](https://www.linkedin.com/in/miguelcarrascobn)
 
 ### clef
@@ -57,13 +59,15 @@ Training my own decision model with [Unsloth](https://unsloth.ai/docs/basics/tra
 - **2026-09** · laya-self-evolving-router: 39-run ablation
 - **2026-09** · qwen-image-2.1-playground and laya-router
 
-Python · PyTorch · Transformers · FastAPI · ROCm · MLX · Docker
+Python · PyTorch · Transformers · FastAPI · Strands Agents · MCP · AWS · ROCm · MLX · Docker
 
 <details>
 <summary>En español</summary>
 <br>
 
 Construyo sistemas con modelos de decisión pequeños: modelos que reciben un prompt y una lista de opciones y devuelven una probabilidad para cada una en una sola pasada, en vez de generar texto. Son lo bastante baratos para ejecutarlos en cada petición, así que los uso para enrutar, priorizar y clasificar. Eso solo funciona si las probabilidades son fiables, así que mido la calibración además de la precisión.
+
+En mi día a día lidero el equipo de IA del Grupo Global Exchange (GETD), donde construimos agentes y sistemas con LLMs sobre Python, FastAPI, Strands Agents, MCP y AWS. Los proyectos de aquí son trabajo propio, aparte de eso.
 
 - **clef**: servidor propio para el modelo de decisión de 9B de Cloudflare, con API compatible con OpenAI, consola web y evaluación con ECE y Brier. Funciona en GPUs de 8 a 16 GB.
 - **laya-self-evolving-router**: un router que empieza sin categorías y crea las suyas a medida que llegan prompts, con un estudio de ablación de 39 ejecuciones.
