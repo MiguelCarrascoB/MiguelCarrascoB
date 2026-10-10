@@ -2,6 +2,10 @@
 
 Usage: python gen.py <out_dir> <router_results.json> <qwen_ui.png> <clef_console.gif>
 
+Needs plexsans.ttf, plexmono.ttf and plexmono-med.ttf next to this script
+(IBM Plex Sans variable and Plex Mono Regular/Medium from github.com/google/fonts,
+ofl/ibmplexsans and ofl/ibmplexmono) and: pip install fonttools brotli pillow
+
 Writes header-{light,dark}.svg, router-growth-{light,dark}.svg, qwen-ui.png and
 clef-console.gif. Every number drawn comes from the user's repos:
   header readout  -> clef docs/screenshots/classify-dark.png (92.1 / 5.4 / 2.5 %, 206 ms)
